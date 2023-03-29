@@ -8,7 +8,7 @@
 #include "maze.h"
 #include "Transversal.h"
 
-Kruskal myMaze = Kruskal(8);
+coolDsa myMaze = coolDsa(8);
 Transversal myTran = Transversal();
 int **Map,**TransMap,mazeSize=8;
 int xPlayer,yPlayer,xEnemy,yEnemy,playerType=0;
@@ -29,7 +29,7 @@ void placeDoor() {
         Map[myMaze.getLength()*2][outDoor] = 0;
 }
 void settingUp(int size){
-        myMaze = Kruskal(size);
+        myMaze = coolDsa(size);
         myMaze.doGenerate();
         Map = myMaze.getMap();
         xNim = (rand() % myMaze.getLength())*2+1;
