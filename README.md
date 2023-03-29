@@ -5,15 +5,17 @@ A Simple Program That Makes Random Maze Using Opengl Api With C++ Language. This
 View Release [Here]
 > Thanks : Mr.Yonathan Ferry Hendrawan
 
-### Introduction
+## Introduction
+ #### Data Structures
+- Graph data structure: The maze is represented as a graph, where each cell in the maze is a node in the graph and the edges represent the possible paths between the nodes.
 
-- [About Kruskal Algorithm](https://www.google.co.id/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwj7u8nykb3TAhUCa7wKHUYZBYcQFggsMAI&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FKruskal%2527s_algorithm&usg=AFQjCNFRRZYfMjMX2s_2V_zHPI03tmnP4A&sig2=NXH3jqAsJtBiHfGz1zL3vQ)
-	
-    Kruskal’s algorithm is a method for producing a minimal spanning tree from a weighted graph. The algorithm I’ll cover here is actually a randomized version of Kruskal’s; the original works something like this:
+- Stack data structure: The depth-first search algorithm used to solve the maze is implemented using a stack data structure.
 
-    - Throw all of the edges in the graph into a big burlap sack. (Or, you know, a set or something.)
-    - Pull out the edge with the lowest weight. If the edge connects two disjoint trees, join the trees. Otherwise, throw that edge away.
-    - Repeat until there are no more edges left. [Learn More Here](http://weblog.jamisbuck.org/2011/1/3/maze-generation-kruskal-s-algorithm)
+- Queue data structure: The breadth-first search algorithm used to solve the maze is implemented using a queue data structure.
+
+- Disjoint-set data structure: The Kruskal's algorithm used to generate a maze is implemented using the disjoint-set data structure.
+
+- Priority queue data structure: The A* algorithm used to solve the maze is implemented using a priority queue data structure.
 
 - **Maze Feature**
     - Generate new layout "C"
