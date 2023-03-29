@@ -40,7 +40,7 @@ To Run This Program In Windows You Can Use The Codeblock IDE ([Get Here](https:/
         - Just Copy Paste The Code In Your main.Cpp Has Been Made
         - Build & Run
         ```
-- **Linux**  
+- **Linux/Ubuntu**  
     - You Can Use The Codeblock For Linux As Well.  
     - You Can Execute Your Code Using A Text Editor That You Love. Like Atoms, Sublime,Geany Or Another.  
 
