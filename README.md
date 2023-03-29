@@ -9,7 +9,7 @@
 
 - Queue data structure: The breadth-first search algorithm used to solve the maze is implemented using a queue data structure.
 
-- Disjoint-set data structure: The Kruskal's algorithm used to generate a maze is implemented using the disjoint-set data structure.
+- Disjoint-set data structure: The DSA's algorithm used to generate a maze is implemented using the disjoint-set data structure.
 
 - Priority queue data structure: The A* algorithm used to solve the maze is implemented using a priority queue data structure.
 
