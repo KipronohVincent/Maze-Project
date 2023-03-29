@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 
-class Kruskal {
+class coolDsa {
 private:
 int length;
 int arrSize;
@@ -11,7 +11,7 @@ int total,xRand,yRand,temp,walk;
 
 public:
 // constructor
-Kruskal(int l) {
+coolDsa(int l) {
         srand ( time(NULL) );
         length = l;
         arrSize = length*2+1;
