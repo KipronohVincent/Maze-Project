@@ -1,9 +1,5 @@
 # Maze Generator 
-[![forthebadge](http://forthebadge.com/badges/built-with-love.svg)](https://github.com/fianekame/Maze-Project)
-
-A Simple Program That Makes Random Maze Using Opengl Api With C++ Language. This Program Was Made On My Current Computer Graphics Courses Finish In 2017. 
-View Release [Here]
-> Thanks : Mr.Yonathan Ferry Hendrawan
+- The repository is a maze project that uses various data structures and algorithms to generate and solve mazes.
 
 ## Introduction
  #### Data Structures
