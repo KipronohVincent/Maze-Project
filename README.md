@@ -31,15 +31,6 @@
     - Space to Run/Stop another one player.
  
 ### Build & Run 
-- **Windows**  
-    - Required ... 
-To Run This Program In Windows You Can Use The Codeblock IDE ([Get Here](https://www.google.co.id/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0ahUKEwjIp8ONmr3TAhVBNpQKHQfJDUQQFggkMAA&url=http%3A%2F%2Fwww.codeblocks.org%2Fdownloads&usg=AFQjCNGin5_gzph-iFTEZ-NsXkpwypBBNQ&sig2=L7-9vYIUSTwdC01iQdkVJQ)) After That Follow The Instructions The Installation With The Addition Of The Opengl Api ([Learn Here](http://www.sci.brooklyn.cuny.edu/~goetz/codeblocks/glut/)).  
-    - _How To Run :_  
-        ```sh
-        - Create A New Project Glut/Opengl Project
-        - Just Copy Paste The Code In Your main.Cpp Has Been Made
-        - Build & Run
-        ```
 - **Linux/Ubuntu**  
     - You Can Use The Codeblock For Linux As Well.  
     - You Can Execute Your Code Using A Text Editor That You Love. Like Atoms, Sublime,Geany Or Another.  
@@ -77,19 +68,3 @@ To Run This Program In Windows You Can Use The Codeblock IDE ([Get Here](https:/
     - Tranparant Wall usign the 5 Key
     - Day or Night usign the 4 key
     - Spaace to Run/Stop another one player.
-
-
-
-License
-----
-[![npm](https://img.shields.io/npm/l/express.svg?style=plastic)](https://github.com/fianekame/Maze-Project/blob/master/LICENSE)
-Copyright (c) 2017 Sofian Eka Sandra
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so
-
-[Here]: <https://github.com/fianekame/Maze-Project/releases>
