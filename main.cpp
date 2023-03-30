@@ -419,7 +419,7 @@ int main(int argc, char* argv[]){
         glutInit(&argc,argv);
         glutInitDisplayMode(GLUT_RGB | GLUT_DEPTH);
         glutInitWindowSize(500,500);
-        glutCreateWindow("Maze Game || Evans Algorithm");
+        glutCreateWindow("Maze Game || DSA is Fun");
         Timer(0);
         glutDisplayFunc(display);
         glutSpecialFunc(specKey);
