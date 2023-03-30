@@ -11,7 +11,7 @@
 
 - Disjoint-set data structure: The Kruskal algorithm (It is used to discover the shortest path between two points in a connected weighted graph.) used to generate a maze is implemented using the disjoint-set data structure.
 
-- Priority queue data structure: The A* algorithm used to solve the maze is implemented using a priority queue data structure.
+- Priority queue data structure: The  algorithm used to solve the maze is implemented using a priority queue data structure.
 
 - **Maze Feature**
     - Generate new layout "C"
@@ -46,7 +46,7 @@
         ```
     - Run Using Terminal : 
         ```sh
-        gcc -o excecutebin filename.cpp -lglut -lGL -lm -lGLU -lstdc++
+        gcc -o excecutebin main.cpp -lglut -lGL -lm -lGLU -lstdc++
         ```
 ### Documentation  
 - **V-1.0**  
