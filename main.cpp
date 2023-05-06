@@ -22,12 +22,14 @@ float ver[] = {0,-1,0};
 float alpha = 4.71;
 int xRoad,yRoad;
 
+ //placing doors at the entrance and exit of a maze.
 void placeDoor() {
         inDoor = myMaze.getDorPos();
         outDoor = myMaze.getDorPos();
         Map[0][inDoor] = 0;
         Map[myMaze.getLength()*2][outDoor] = 0;
 }
+//  setting up maze game with the specified size.
 void settingUp(int size){
         myMaze = Kruskal(size);
         myMaze.doGenerate();
@@ -43,7 +45,7 @@ void settingUp(int size){
         xPlayer=outDoor; yPlayer=myMaze.getLength()*2;
         xEnemy=size*2-1; yEnemy=size*2-1;
 }
-
+// initializing the maze
 void myinit(){
         isMorning == true ? glClearColor(0.5,0.5,1,0.5) : glClearColor(0.0,0.0,0.0,1);
         glMatrixMode(GL_PROJECTION);
@@ -55,13 +57,13 @@ void myinit(){
                 glLoadIdentity();
         }
         else{
-                //3Ddependeci
+                //3Ddependecy
                 glOrtho(-mazeSize-2.5, mazeSize+2.5, -mazeSize-2.5, mazeSize+2.5, -mazeSize-4.5, mazeSize+4.5);
                 glMatrixMode(GL_MODELVIEW);
         }
         //3Ddependeci
         glShadeModel(GL_FLAT);
-        //tranparanceDependeci
+        //tranparanceDependecy
         glEnable(GL_BLEND);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
         glEnable(GL_DEPTH_TEST);
@@ -78,7 +80,6 @@ void drawBox(float zPlus,float zMin,float left,float down,float right,float top,
         glVertex3f (right,top,zPlus);
         glVertex3f (left,top,zPlus);
         glEnd();
-        //belakang
         glBegin(GL_POLYGON);
         glNormal3f(0,0,-1);
         glVertex3f (left,down,zMin);
@@ -87,7 +88,6 @@ void drawBox(float zPlus,float zMin,float left,float down,float right,float top,
         glVertex3f (left,top,zMin);
         glEnd();
         glColor4f(colR+0.2,colG+0.2,colB+0.2,colAlpha);
-        //kiri
         glBegin(GL_POLYGON);
         glNormal3f(-1,0,0);
         glVertex3f (left,down,zPlus);
@@ -95,7 +95,6 @@ void drawBox(float zPlus,float zMin,float left,float down,float right,float top,
         glVertex3f (left,top,zMin);
         glVertex3f (left,down,zMin);
         glEnd();
-        //kanan
         glBegin(GL_POLYGON);
         glNormal3f(1,0,0);
         glVertex3f (right,down,zPlus);
@@ -103,7 +102,6 @@ void drawBox(float zPlus,float zMin,float left,float down,float right,float top,
         glVertex3f (right,top,zMin);
         glVertex3f (right,top,zPlus);
         glEnd();
-        //bawah
         glBegin(GL_POLYGON);
         glNormal3f(0,-1,0);
         glVertex3f (left,down,zPlus);
@@ -111,7 +109,6 @@ void drawBox(float zPlus,float zMin,float left,float down,float right,float top,
         glVertex3f (right,down,zMin);
         glVertex3f (right,down,zPlus);
         glEnd();
-        //atas
         glBegin(GL_POLYGON);
         glNormal3f(0,1,0);
         glVertex3f (left,top,zPlus);
@@ -317,7 +314,7 @@ void input(unsigned char key, int x, int y){
                 }
         }
         if(key=='v' || key=='V') {
-                //FIXME: rotation is wutever
+                //FIXME: rotation
                 if(viewMode==0) {
                         glutIdleFunc(nimAnimation);
                         viewMode = 1;
